@@ -1,0 +1,53 @@
+.wrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1.5px solid var(--border);
+  background: #fafafa;
+  animation: fadeIn .3s ease;
+}
+.img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  background: #fafafa;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,.45));
+  padding: .8rem 1rem .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.badge {
+  color: #fff;
+  font-family: 'DM Mono', monospace;
+  font-size: .64rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+}
+.dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #4ade80;
+  flex-shrink: 0;
+}
+.removeBtn {
+  background: rgba(255,255,255,.2);
+  border: 1px solid rgba(255,255,255,.35);
+  color: #fff;
+  font-size: .75rem;
+  padding: .3rem .7rem;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background .2s;
+  font-family: 'Outfit', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+.removeBtn:hover { background: rgba(255,255,255,.3); }

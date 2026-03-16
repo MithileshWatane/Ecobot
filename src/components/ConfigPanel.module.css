@@ -1,0 +1,66 @@
+.panel {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  padding: 1.1rem 1.1rem 1.2rem;
+}
+.title {
+  font-family: 'DM Mono', monospace;
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--text-muted);
+  margin-bottom: .9rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+.field label {
+  display: block;
+  font-size: .78rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: .35rem;
+}
+.inputWrap {
+  position: relative;
+}
+.field input {
+  width: 100%;
+  padding: .7rem 2.6rem .7rem .9rem;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  font-family: 'DM Mono', monospace;
+  font-size: .8rem;
+  color: var(--bark);
+  background: #fafafa;
+  transition: border-color .18s, background .18s;
+  outline: none;
+  -webkit-appearance: none;
+}
+.field input:focus {
+  border-color: var(--sage);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(143,173,126,.15);
+}
+.field input::placeholder { color: #bcc8b0; }
+
+.eyeBtn {
+  position: absolute;
+  right: .7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: .85rem;
+  color: var(--text-muted);
+  padding: .2rem;
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+}

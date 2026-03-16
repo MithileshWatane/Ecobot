@@ -1,0 +1,42 @@
+.zone {
+  border: 2px dashed var(--mist);
+  border-radius: 18px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all .25s ease;
+  background: var(--sky);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
+}
+.zone:hover, .zone.dragover {
+  border-color: var(--leaf);
+  background: #e6f4ec;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(74,124,74,.1);
+}
+.zone:active { transform: scale(.99); }
+.icon {
+  font-size: 2.8rem;
+  margin-bottom: .8rem;
+  display: block;
+  animation: float 3s ease-in-out infinite;
+}
+.label {
+  font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--moss);
+  margin-bottom: .35rem;
+}
+.sub {
+  font-size: .8rem;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+.orDivider {
+  margin: .6rem 0 0;
+  font-size: .75rem;
+  color: var(--text-muted);
+}

@@ -1,0 +1,56 @@
+.wrap {
+  padding: 2rem 0;
+  animation: fadeIn .3s ease;
+}
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.ring {
+  width: 48px; height: 48px;
+  border: 3px solid var(--border);
+  border-top-color: var(--leaf);
+  border-radius: 50%;
+  animation: spin .75s linear infinite;
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+.step {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  background: #fafafa;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: .75rem 1rem;
+  font-size: .84rem;
+  color: var(--text-muted);
+  transition: all .3s;
+}
+.step.active {
+  border-color: var(--leaf);
+  background: var(--sky);
+  color: var(--moss);
+  font-weight: 500;
+}
+.step.done {
+  border-color: var(--border);
+  color: var(--text-muted);
+  opacity: .65;
+}
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  flex-shrink: 0;
+  transition: background .3s;
+}
+.step.active .dot {
+  background: var(--leaf);
+  animation: pulse 1s infinite;
+}
+.step.done .dot { background: var(--sage); }
